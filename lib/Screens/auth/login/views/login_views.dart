@@ -70,7 +70,10 @@ class _LOGINVIEWState extends State<LOGINVIEW> {
                             decoration: BoxDecoration(
                                 color: Color(0xfff5f5f5),
                                 borderRadius:
-                                BorderRadius.all(Radius.circular(32))),
+                                BorderRadius.all(Radius.circular(32)),
+
+
+                            ),
                             child: Stack(
                               alignment: Alignment.center,
                               children: [

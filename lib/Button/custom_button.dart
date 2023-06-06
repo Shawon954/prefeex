@@ -15,7 +15,18 @@ class CUSTOMBUTTON extends StatelessWidget {
       width: 312.w,
       decoration: BoxDecoration(
         color: Color(0xff6484FF),
-        borderRadius: BorderRadius.all(Radius.circular(30.r))
+        borderRadius: BorderRadius.all(Radius.circular(30.r)),
+        boxShadow: [
+          BoxShadow(
+            color: Color(0xff9A99A0),
+            blurRadius: 10.0,
+            spreadRadius: 2,
+            offset: Offset(
+              2,
+              5,
+            ),
+          )
+        ],
       ),
       child: Center(child: Text(AppStrings().Button,style: AppStyle().custombuttonstyle)),
 
