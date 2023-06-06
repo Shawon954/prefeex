@@ -171,15 +171,15 @@ class _INTROVIEWState extends State<INTROVIEW> {
                                       child: Text(
                                         'Skip',
                                         style: TextStyle(
-                                            fontSize: 16.sp,
+                                            fontSize: 14.sp,
                                             fontWeight: FontWeight.w500),
                                       )),
                                   SmoothPageIndicator(
                                     controller: _pageController,
                                     count: 3,
                                     effect: const WormEffect(
-                                      dotHeight: 16,
-                                      dotWidth: 16,
+                                      dotHeight: 8,
+                                      dotWidth: 8,
                                       type: WormType.thinUnderground,
                                     ),
                                   ),
@@ -188,7 +188,7 @@ class _INTROVIEWState extends State<INTROVIEW> {
                                           child: Text(
                                             'Done',
                                             style: TextStyle(
-                                                fontSize: 16.sp,
+                                                fontSize: 14.sp,
                                                 fontWeight: FontWeight.w500),
                                           ),
                                           onTap: () {
@@ -206,7 +206,7 @@ class _INTROVIEWState extends State<INTROVIEW> {
                                           child: Text(
                                             'Next',
                                             style: TextStyle(
-                                                fontSize: 16.sp,
+                                                fontSize: 14.sp,
                                                 fontWeight: FontWeight.w500),
                                           ),
                                           onTap: () {

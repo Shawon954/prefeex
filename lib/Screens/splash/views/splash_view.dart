@@ -10,7 +10,7 @@ class SPLASHVIEW extends StatelessWidget {
   Widget build(BuildContext context) {
      Future.delayed(Duration(seconds: 3),()=>Get.offAndToNamed('/intro'));
     return Scaffold(
-      backgroundColor:appcolors.Splash_color,
+      backgroundColor:AppColors.Splash_color,
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

@@ -65,7 +65,7 @@ class _LOGINVIEWState extends State<LOGINVIEW> {
                         left: 18,
                         child: Center(
                           child: Container(
-                            height: 410.h,
+                            height: 415.h,
                             width: 352.w,
                             decoration: BoxDecoration(
                                 color: Color(0xfff5f5f5),
@@ -206,12 +206,11 @@ class _LOGINVIEWState extends State<LOGINVIEW> {
                                                 border: InputBorder.none,
                                                 enabledBorder: OutlineInputBorder(
                                                     borderSide: BorderSide.none,
-                                                    borderRadius: BorderRadius.all(Radius.circular(30))
+                                                    borderRadius: BorderRadius.all(Radius.circular(30.r))
                                                 ),
                                                 focusedBorder:
                                                 OutlineInputBorder(
-                                                    borderSide:
-                                                    BorderSide.none,
+                                                    borderSide: BorderSide.none,
                                                     borderRadius:
                                                     BorderRadius.all(
                                                         Radius.circular(
@@ -330,7 +329,24 @@ class _LOGINVIEWState extends State<LOGINVIEW> {
                                       ),
                                     ),
                                     SizedBox(
-                                      height: 30.h,
+                                      height: 10.h,
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(right: 20),
+                                      child: Align(
+                                        alignment: Alignment.topRight,
+                                        child: InkWell(
+                                          onTap: (){
+                                            Get.toNamed('/forgotemail');
+
+                                          },
+                                          child: Text(AppStrings().ForgotText,style: AppStyle().myapptextstylr,),
+                                        ),
+                                      ),
+                                    ),
+
+                                    SizedBox(
+                                      height: 15.h,
                                     ),
                                     InkWell(
                                         onTap: () {
@@ -340,36 +356,36 @@ class _LOGINVIEWState extends State<LOGINVIEW> {
                                           AppStyle().custombuttonstyle,
                                         )),
                                     SizedBox(
-                                      height: 15.h,
+                                      height: 10.h,
                                     ),
-                                    Row(
-                                      mainAxisAlignment: MainAxisAlignment.center,
-                                      children: [
-                                        Text(
-                                          AppStrings().SpanTextOne,
-                                          style: AppStyle().sinupTextstyle,
-                                        ),
-                                        SizedBox(
-                                          width: 5.h,
-                                        ),
-                                        InkWell(
-                                          onTap: () {
-                                            print('Click Ok');
-                                          },
-                                          child: Text(
-                                            AppStrings().SpanTextTwo,
-                                            style: AppStyle().sinupbuttonstyle,
-                                          ),
-                                        ),
-                                        SizedBox(
-                                          width: 5.h,
-                                        ),
-                                        Text(
-                                          AppStrings().SpanTextThree,
-                                          style: AppStyle().sinupTextstyle,
-                                        ),
-                                      ],
-                                    )
+                                    // Row(
+                                    //   mainAxisAlignment: MainAxisAlignment.center,
+                                    //   children: [
+                                    //     Text(
+                                    //       AppStrings().SpanTextOne,
+                                    //       style: AppStyle().sinupTextstyle,
+                                    //     ),
+                                    //     SizedBox(
+                                    //       width: 5.h,
+                                    //     ),
+                                    //     InkWell(
+                                    //       onTap: () {
+                                    //         print('Click Ok');
+                                    //       },
+                                    //       child: Text(
+                                    //         AppStrings().SpanTextTwo,
+                                    //         style: AppStyle().sinupbuttonstyle,
+                                    //       ),
+                                    //     ),
+                                    //     SizedBox(
+                                    //       width: 5.h,
+                                    //     ),
+                                    //     Text(
+                                    //       AppStrings().SpanTextThree,
+                                    //       style: AppStyle().sinupTextstyle,
+                                    //     ),
+                                    //   ],
+                                    // )
                                   ],
                                 ),
 

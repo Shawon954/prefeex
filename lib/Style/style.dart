@@ -57,7 +57,7 @@ class AppStyle{
          fontFamily: 'Gilroy',color: Color(0xffBABAC6));
     // Singup Button //
 
-
+    TextStyle myapptextstylr = TextStyle(fontSize: 14.sp,fontWeight: FontWeight.w600,color: Color(0xff9A99A0), fontFamily: 'Gilroy',);
 
 
 }
