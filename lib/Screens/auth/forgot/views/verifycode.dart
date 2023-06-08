@@ -23,6 +23,7 @@ class _FOEGOTVERIFICATIONState extends State<FOEGOTVERIFICATION> {
     width = size.width;
     return SafeArea(
       child: Scaffold(
+        extendBody: true,
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
@@ -137,7 +138,7 @@ class _FOEGOTVERIFICATIONState extends State<FOEGOTVERIFICATION> {
                                     ),
                                     GestureDetector(onTap: (){},
                                       child: Text(
-                                        AppStrings().RecendCode,style: AppStyle().sinupbuttonstyle,
+                                        AppStrings().RecendCode,style: AppStyle().resendbuttonstyle,
 
                                       ),
                                     ),

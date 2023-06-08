@@ -159,6 +159,7 @@ class _INTROVIEWState extends State<INTROVIEW> {
                                 children: [
                                   GestureDetector(
                                       onTap: () {
+                                        _pageController.jumpToPage(2);
                                         _pageController.nextPage(
                                             duration:
                                                 Duration(milliseconds: 500),

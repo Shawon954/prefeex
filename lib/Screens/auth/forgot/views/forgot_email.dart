@@ -35,6 +35,7 @@ class _FORGOREMAILState extends State<FORGOREMAIL> {
     width = size.width;
     return SafeArea(
       child: Scaffold(
+        extendBody: true,
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
@@ -178,7 +179,8 @@ class _FORGOREMAILState extends State<FORGOREMAIL> {
                                         },
                                         child: CUSTOMBUTTON(
                                           AppStyle().custombuttonstyle,
-                                        )),
+                                        )
+                                    ),
 
 
                                   ],

@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:prefeex/AppColors/all_colors.dart';
 import 'package:prefeex/AppString/appstring.dart';
 import 'package:prefeex/Style/style.dart';
 
@@ -10,11 +11,12 @@ class CUSTOMBUTTON extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return
+      Container(
       height: 55.h,
       width: 312.w,
       decoration: BoxDecoration(
-        color: Color(0xff6484FF),
+        color: AppColors.button_color,
         borderRadius: BorderRadius.all(Radius.circular(30.r)),
         boxShadow: [
           BoxShadow(
@@ -28,7 +30,7 @@ class CUSTOMBUTTON extends StatelessWidget {
           )
         ],
       ),
-      child: Center(child: Text(AppStrings().Button,style: AppStyle().custombuttonstyle)),
+      child: Center(child: Text(AppStrings().Button,style:AppStyle().custombuttonstyle,)),
 
     );
   }

@@ -36,6 +36,7 @@ class _FORGOTNEWPASSWORDState extends State<FORGOTNEWPASSWORD> {
     width = size.width;
     return SafeArea(
       child: Scaffold(
+        extendBody: true,
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
@@ -361,7 +362,9 @@ class _FORGOTNEWPASSWORDState extends State<FORGOTNEWPASSWORD> {
                                         },
                                         child: CUSTOMBUTTON(
                                           AppStyle().custombuttonstyle,
-                                        )),
+                                        ),
+
+                                    ),
                                     SizedBox(
                                       height: 10.h,
                                     ),
